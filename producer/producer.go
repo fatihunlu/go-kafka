@@ -31,6 +31,6 @@ func Produce(topic string, limit int) {
 			return
 		}
 		log.Printf("[producer] partition id: %d; offset:%d, value: %s\n", partition, offset, str)
-		time.Sleep(2 * time.Second)
+		time.Sleep(1 * time.Second)
 	}
 }
